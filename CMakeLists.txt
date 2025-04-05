@@ -8,8 +8,6 @@ project(Template 	LANGUAGES CXX
 # Read More: https://clangd.llvm.org/design/compile-commands
 set(CMAKE_EXPORT_COMPILE_COMMANDS 1)
 
-add_subdirectory("${CMAKE_HOME_DIRECTORY}/libraries/raylib/")
-
 # Basic Settings
 set(CMAKE_SOURCE_DIR "${CMAKE_HOME_DIRECTORY}/src")
 set(EXECUTABLE_NAME "${PROJECT_NAME}_bin")
@@ -18,5 +16,3 @@ set(EXECUTABLE_NAME "${PROJECT_NAME}_bin")
 file(GLOB_RECURSE SOURCES "${CMAKE_SOURCE_DIR}/*.cpp")
 
 add_executable("${EXECUTABLE_NAME}" ${SOURCES})
-
-target_link_libraries("${EXECUTABLE_NAME}" raylib)
