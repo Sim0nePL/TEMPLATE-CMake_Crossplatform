@@ -1,0 +1,1 @@
+# TEMPLATE-CMake_Crossplatform
